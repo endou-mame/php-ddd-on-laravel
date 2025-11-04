@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace packages\Domain\Book;
 
-
 final readonly class BookTitle
 {
     public function __construct(

@@ -6,7 +6,6 @@ namespace packages\Application\Book\BookRegister;
 
 use packages\Domain\Book\Book;
 use packages\Domain\Book\BookAuthor;
-use packages\Domain\Book\BookId;
 use packages\Domain\Book\BookTitle;
 
 final readonly class BookRegisterCommandHandler
