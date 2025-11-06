@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace packages\Application\Book\BookRegister;
+namespace packages\Application\Book\Register;
 
 final readonly class BookRegisterCommand
 {

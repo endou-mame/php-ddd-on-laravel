@@ -2,15 +2,18 @@
 
 declare(strict_types=1);
 
-namespace packages\Application\Book\BookRegister;
+namespace packages\Application\Book\Register;
 
 use packages\Domain\Book\Book;
 use packages\Domain\Book\BookAuthor;
 use packages\Domain\Book\BookTitle;
+use packages\Domain\Book\IBookRepository;
 
 final readonly class BookRegisterCommandHandler
 {
-    public function __construct()
+    public function __construct(
+        public IBookRepository $bookRepository,
+    )
     {
     }
 
@@ -23,5 +26,6 @@ final readonly class BookRegisterCommandHandler
             title: $bookTitle,
             author: $bookAuthor,
         );
+        $this->bookRepository->save($book);
     }
 }

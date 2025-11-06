@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace packages\Application\Book\BookBorrow;
+namespace packages\Application\Book\Borrow;
 
 final readonly class BookBorrowCommand
 {

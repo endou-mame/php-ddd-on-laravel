@@ -10,8 +10,6 @@ final readonly class Book
         public BookId $id,
         public BookTitle $title,
         public BookAuthor $author,
-        public ?string $borrowedByUserId = null,
-        public ?\DateTimeImmutable $borrowedAt = null,
     ) {
     }
 
